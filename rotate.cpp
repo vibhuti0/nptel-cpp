@@ -1,11 +1,14 @@
-#include <iostream>
-#include <algorithm>
+#include <iostream> 
+#include <algorithm> 
 using namespace std;
-int main()
-{
-int data[]={1,2,3,4,5};
-rotate(data,data+2,data+5);
-for(int i=0;i<5;i++)
-cout<<data[i]<<" ";
+
+int main() {
+
+int iarr[]= {10, 20, 50, 40, 10, 50}; 
+rotate(&iarr[0], &iarr [2], &iarr [6]); 
+remove (&iarr[0], &iarr [6], 10); //LINE-1
+for (int i = 0; i < 4; ++i) 
+cout << iarr[i]<<" " ;
 return 0;
+
 }
