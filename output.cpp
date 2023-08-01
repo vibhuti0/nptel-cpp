@@ -1,19 +1,27 @@
-#include<iostream>
+#include <iostream> 
+#include <algorithm>
+using namespace std;
 
-#include<algorithm>
+void modify (int *arr) {
 
-#include<string.h> using namespace std;
+rotate(arr, arr + 3, arr + 5);
 
-bool compare (char ci, char c2){ return tolower(ci)> tolower (c2);
-
-//LINE-1
+rotate(arr, arr + 2, arr + 4);
 
 }
 
-int main(){
+int main() { 
+    int iarr [5];
 
-char arri [20]="C++ Program", arr2 [20]= "C Program";
-cout<<lexicographical_compare
+for (int i = 0; i < 5; i++)
+
+*(iarr + i) = i * 2;
+
+modify(iarr);
+
+for (int i = 0; i < 5; ++i) 
+cout << *(iarr + i) << " ";
+
 return 0;
 
 }
