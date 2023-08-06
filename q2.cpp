@@ -1,8 +1,6 @@
 #include <iostream>
-
 using namespace std; 
 #define Times (x, y) (x * y)
-
 int main() 
 {
 int a = 4;
