@@ -17,9 +17,10 @@ class private_data
 int main()
 {
     private_data t;
-    t.x=1;
-    t.f1();
+    t.x=1;//line1
+    t.f1();//line2
     t.y=2;
     t.f2();
     return 0;
 }
+// output -line1 and line2 gives error
